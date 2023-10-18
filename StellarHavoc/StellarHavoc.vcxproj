@@ -137,6 +137,7 @@
   <ItemGroup>
     <ClCompile Include="src\shapp.cpp" />
     <ClCompile Include="src\shdevice.cpp" />
+    <ClCompile Include="src\shpipeline.cpp" />
     <ClCompile Include="src\shwindow.cpp" />
     <ClCompile Include="StellarHavoc.cpp" />
   </ItemGroup>
@@ -144,7 +145,11 @@
     <ClInclude Include="hed\main.h" />
     <ClInclude Include="hed\shapp.hpp" />
     <ClInclude Include="hed\shdevice.hpp" />
+    <ClInclude Include="hed\shpipeline.hpp" />
     <ClInclude Include="hed\shwindow.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compileshader.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

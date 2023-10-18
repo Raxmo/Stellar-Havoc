@@ -1,11 +1,11 @@
 #version 450
 
 vec2 poss[3] = vec2[]
-{
+(
 	vec2(-0.5, -0.5),
 	vec2(-0.5, 0.5),
 	vec2(0.5, 0.0)
-};
+);
 
 void main()
 {

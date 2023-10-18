@@ -27,6 +27,9 @@
     <ClCompile Include="src\shdevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\shpipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hed\main.h">
@@ -41,5 +44,13 @@
     <ClInclude Include="hed\shdevice.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="hed\shpipeline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compileshader.bat">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

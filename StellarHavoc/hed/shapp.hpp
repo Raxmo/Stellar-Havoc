@@ -1,6 +1,8 @@
 #pragma once
 
 #include "shwindow.hpp"
+#include "shpipeline.hpp"
+#include <string>
 
 namespace stellarhavoc
 {
@@ -12,6 +14,7 @@ namespace stellarhavoc
 
 		void run();
 	private:
-		shwindow shwindow{WIDTH, HEIGHT, "Hello Vulkan!"};
+		shwindow shwindow{ WIDTH, HEIGHT, "Hello Vulkan!" };
+		shpipeline shpipeline{ "shd/main.vert.spv", "shd/main.frag.spv" };
 	};
 }
