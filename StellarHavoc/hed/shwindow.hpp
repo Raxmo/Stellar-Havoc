@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 
 #include <string>
+#include <stdexcept>
 
 namespace stellarhavoc
 {
@@ -14,10 +15,12 @@ namespace stellarhavoc
 		shwindow(int w, int h, std::string name);
 		~shwindow();
 
-		shwindow(cinst shwindow&) = delete;
+		shwindow(const shwindow&) = delete;
 		shwindow& operator=(const shwindow&) = delete;
 
 		bool shouldClose() { return glfwWindowShouldClose(window); };
+
+		void createWindowSurface(VkInstance instance, VkSurfaceKHR* surface);
 	private:
 		void initWindow();
 

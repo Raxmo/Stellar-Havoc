@@ -21,7 +21,10 @@
     <ClCompile Include="src\shwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shapp.cpp">
+    <ClCompile Include="src\shapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shdevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="hed\shwindow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hed\shdevice.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
