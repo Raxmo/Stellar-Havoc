@@ -4,6 +4,7 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <cassert>
 
 #include "shdevice.hpp"
 
@@ -11,7 +12,18 @@ namespace stellarhavoc
 {
 	struct pipelineconfiginfo
 	{
-
+		VkViewport viewport;
+		VkRect2D scissor;
+		VkPipelineViewportStateCreateInfo viewportInfo;
+		VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
+		VkPipelineRasterizationStateCreateInfo rasterizationInfo;
+		VkPipelineMultisampleStateCreateInfo multisampleInfo;
+		VkPipelineColorBlendAttachmentState colorBlendAttatchment;
+		VkPipelineColorBlendStateCreateInfo colorBlendInfo;
+		VkPipelineDepthStencilStateCreateInfo depthStencileInfo;
+		VkPipelineLayout pipelineLayout = nullptr;
+		VkRenderPass renderPass = nullptr;
+		uint32_t subpass = 0;
 	};
 
 	class shpipeline
@@ -22,7 +34,7 @@ namespace stellarhavoc
 			const std::string vertPath, 
 			const std::string fragPath, 
 			const pipelineconfiginfo &cfginfo);
-		~shpipeline() {}
+		~shpipeline();
 
 		shpipeline(const shpipeline&) = delete;
 		void operator=(const shpipeline&) = delete;

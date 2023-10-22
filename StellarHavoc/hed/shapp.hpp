@@ -16,6 +16,10 @@ namespace stellarhavoc
 	private:
 		shwindow shwindow{ WIDTH, HEIGHT, "Hello Vulkan!" };
 		shDevice shDevice{ shwindow };
-		shpipeline shpipeline{shDevice, "shd/main.vert.spv", "shd/main.frag.spv", shpipeline::createdefaultconfiginfo(WIDTH, HEIGHT)};
+		shpipeline shpipeline{
+			shDevice, 
+			"shd/main.vert.spv",
+			"shd/main.frag.spv",
+			shpipeline::createdefaultconfiginfo(WIDTH, HEIGHT)};
 	};
 }
