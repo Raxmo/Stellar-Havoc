@@ -30,7 +30,7 @@ namespace stellarhavoc
 	{
 	public:
 		shpipeline(
-			shDevice &device, 
+			shdevice &device, 
 			const std::string vertPath, 
 			const std::string fragPath, 
 			const pipelineconfiginfo &cfginfo);
@@ -51,7 +51,7 @@ namespace stellarhavoc
 
 		void createShaderModule(const std::vector<char>& code, VkShaderModule* shadermodule);
 
-		shDevice& device;
+		shdevice& device;
 		VkPipeline graphicsPipeline;
 		VkShaderModule vertmodule;
 		VkShaderModule fragmodule;

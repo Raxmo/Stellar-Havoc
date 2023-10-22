@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\shswapchain.cpp" />
     <ClCompile Include="src\shapp.cpp" />
     <ClCompile Include="src\shdevice.cpp" />
     <ClCompile Include="src\shpipeline.cpp" />
@@ -143,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hed\main.h" />
+    <ClInclude Include="hed\shswapchain.hpp" />
     <ClInclude Include="hed\shapp.hpp" />
     <ClInclude Include="hed\shdevice.hpp" />
     <ClInclude Include="hed\shpipeline.hpp" />

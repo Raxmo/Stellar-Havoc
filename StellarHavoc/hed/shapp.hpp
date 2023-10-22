@@ -15,7 +15,7 @@ namespace stellarhavoc
 		void run();
 	private:
 		shwindow shwindow{ WIDTH, HEIGHT, "Hello Vulkan!" };
-		shDevice shDevice{ shwindow };
+		shdevice shDevice{ shwindow };
 		shpipeline shpipeline{
 			shDevice, 
 			"shd/main.vert.spv",

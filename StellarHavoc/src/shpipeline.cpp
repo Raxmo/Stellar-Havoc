@@ -3,7 +3,7 @@
 namespace stellarhavoc
 {
 	shpipeline::shpipeline(
-		shDevice& device,
+		shdevice& device,
 		const std::string vertPath,
 		const std::string fragPath,
 		const pipelineconfiginfo& cfginfo)
